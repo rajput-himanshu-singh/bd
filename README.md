@@ -20,7 +20,7 @@ Use the preview query on your locally hosted or deployed site to open the celebr
 |---|---|---|
 | **🚀 Instant Preview** | Add `?preview=1` to your site URL | Opens the celebration without waiting for the configured birthday. |
 | **🌐 Birthday Countdown** | Open the site without a query string | Shows the countdown using the date configured in `script.js`. |
-| **🔑 Secret Unlock Password** | `birthday` *(all lowercase)* | Click the lock button on the countdown screen & enter this password to unlock! |
+| **🔑 Secret Unlock Password** | `2811` | Click the lock button on the countdown screen and enter this password to unlock. |
 
 ---
 
@@ -73,7 +73,7 @@ const CONFIG = {
    birthdayMonth: 11,          // November
    birthdayDay:   28,          // Ichha's birthday
   timeZone:      "Asia/Kolkata", // Your timezone
-  passcode:      "birthday",  // Change or keep your secret unlock password!
+   passcode:      "2811",      // Change this unlock password if desired
    friendName:    "Ichha",     // Birthday person's name
 
    // 27 photos in the scrapbook album

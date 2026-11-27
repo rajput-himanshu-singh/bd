@@ -19,7 +19,7 @@ const CONFIG = {
   birthdayDay:   28,  // Ichha's birthday
   timeZone:      "Asia/Kolkata",
   totalPages:    12,  // pages 0 to 11
-  passcode:      "birthday", // Secret passcode to unlock during countdown preview
+  passcode:      "2811", // Secret passcode to unlock during countdown preview
   friendName:    "Ichha",
 
   // Universe background metadata
@@ -406,7 +406,7 @@ function handlePasswordClick(e) {
     // Empty or cancelled: stay locked
     return;
   }
-  if (pass === CONFIG.passcode || pass === "birthday" ) {
+  if (pass === CONFIG.passcode) {
     startSystemUnlocking();
   } else {
     alert("Incorrect password!");
