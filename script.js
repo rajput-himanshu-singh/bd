@@ -15,41 +15,60 @@
 
 // ── CONFIG ───────────────────────────────────────────────────────────────────
 const CONFIG = {
-  birthdayMonth: 9,   // 1 to 12 (e.g. 9 for September)
-  birthdayDay:   19,  // Day of the month
+  birthdayMonth: 11,  // November
+  birthdayDay:   28,  // Ichha's birthday
   timeZone:      "Asia/Kolkata",
   totalPages:    12,  // pages 0 to 11
   passcode:      "birthday", // Secret passcode to unlock during countdown preview
-  friendName:    "Bestie",
+  friendName:    "Ichha",
 
   // Universe background metadata
   universeThemes: [
-    { name: "joy",    emojis: ["⭐","💛","✨","🌟","💫","🎉"] },
-    { name: "chef",   emojis: ["🍳","🔥","👩‍🍳","💨","🧂","✨"] },
-    { name: "foodie", emojis: ["🍔","🍕","🧋","🍟","🍰","🌮"] },
-    { name: "wander", emojis: ["🌊","🌴","🌺","🐚","⛵","🌈"] },
-    { name: "dancer", emojis: ["🎵","🎶","💃","✨","🎤","🌟"] },
-    { name: "royalty",emojis: ["👑","💙","⚡","🌟","✨","💎"] }
+    { name: "joy",    emojis: ["💻","☕","📸","✨","🌿","💛"] },
+    { name: "chef",   emojis: ["😂","📷","✨","🎬","💖","🌟"] },
+    { name: "foodie", emojis: ["💜","🌿","✨","🪷","👑","💫"] },
+    { name: "wander", emojis: ["🧸","📼","🌟","💛","✨","🎞️"] },
+    { name: "dancer", emojis: ["🎥","💃","💜","✨","🌿","🎶"] },
+    { name: "royalty",emojis: ["👑","💙","🎂","🌟","✨","💎"] }
   ],
 
   gallery: [
-    { caption: "Our First Selfie",          stamp: "#Memories",      tilt: -2.5, img: "assets/images/memory-1.webp", icon: "📸" },
-    { caption: "Milestone Moments",         stamp: "#Victories",     tilt:  3.2, img: "assets/images/memory-2.webp", icon: "⭐" },
-    { caption: "Best Friends Forever",      stamp: "#Besties",       tilt: -1.8, img: "assets/images/memory-3.webp", icon: "✨" },
-    { caption: "Late Night Talks & Fun",    stamp: "#GoodTimes",     tilt:  2.8, img: "assets/images/memory-4.webp", icon: "☕" },
-    { caption: "All Time Foodie Quests",    stamp: "#FoodCrawl",     tilt: -3.5, img: "assets/images/memory-5.webp", icon: "🍔" },
-    { caption: "Spontaneous Adventures",    stamp: "#Wanderlust",    tilt:  1.5, img: "assets/images/memory-6.webp", icon: "🚗" },
-    { caption: "Celebration Shenanigans",   stamp: "#PartyVibes",    tilt: -2.2, img: "assets/images/memory-7.webp", icon: "🎉" },
-    { caption: "The Inseparable Duo",       stamp: "#Forever",       tilt:  3.0, img: "assets/images/memory-8.webp", icon: "🧿" }
+    { caption: "A little peace in the park",  stamp: "#Outdoors",     tilt: -2.5, img: "assets/images/ichha-memory-01.jpg", icon: "🌿" },
+    { caption: "The hallway mirror approved",stamp: "#Style",        tilt:  3.2, img: "assets/images/ichha-memory-02.jpg", icon: "💜" },
+    { caption: "Elevator selfie, us two",     stamp: "#Us",           tilt: -1.8, img: "assets/images/ichha-memory-03.jpg", icon: "📸" },
+    { caption: "Office salon, open for business",stamp:"#Workday",    tilt:  2.8, img: "assets/images/ichha-memory-04.jpg", icon: "💇" },
+    { caption: "One very committed stylist",  stamp: "#Outtakes",     tilt: -3.5, img: "assets/images/ichha-memory-05.jpg", icon: "🎬" },
+    { caption: "Dinner with good company",    stamp: "#Together",     tilt:  1.5, img: "assets/images/ichha-memory-06.jpg", icon: "🍽️" },
+    { caption: "A candid from the table",     stamp: "#OutTogether",  tilt: -2.2, img: "assets/images/ichha-memory-07.jpg", icon: "🥂" },
+    { caption: "One more dinner memory",      stamp: "#Together",     tilt:  3.0, img: "assets/images/ichha-memory-08.jpg", icon: "✨" },
+    { caption: "Our cozy evening together",   stamp: "#Together",     tilt: -1.6, img: "assets/images/ichha-memory-09.jpg", icon: "🌙" },
+    { caption: "The sweetest kind of company",stamp: "#Us",           tilt:  2.4, img: "assets/images/ichha-memory-10.jpg", icon: "💙" },
+    { caption: "Little-you, big sparkle",     stamp: "#Throwback",    tilt: -2.8, img: "assets/images/ichha-memory-11.jpg", icon: "🌟" },
+    { caption: "Saree-day, main-character energy",stamp:"#Style",    tilt:  1.8, img: "assets/images/ichha-memory-12.jpg", icon: "💜" },
+    { caption: "The early-years smile",       stamp: "#Throwback",    tilt: -1.2, img: "assets/images/ichha-memory-13.jpg", icon: "🧸" },
+    { caption: "Festive-day glow",            stamp: "#Tradition",    tilt:  2.7, img: "assets/images/ichha-memory-14.jpg", icon: "🌿" },
+    { caption: "Focused, until the camera appears",stamp:"#OfficeDays",tilt:-3.0,img:"assets/images/ichha-memory-15.jpg",icon:"💻" },
+    { caption: "Desk-side giggle",            stamp: "#OfficeDays",   tilt:  1.3, img: "assets/images/ichha-memory-16.jpg", icon: "😄" },
+    { caption: "Deep in the laptop zone",     stamp: "#OfficeDays",   tilt: -2.1, img: "assets/images/ichha-memory-17.jpg", icon: "⌨️" },
+    { caption: "The facepalm frame",          stamp: "#Outtakes",     tilt:  2.2, img: "assets/images/ichha-memory-18.jpg", icon: "😂" },
+    { caption: "A little wave between tasks", stamp: "#Workday",      tilt: -1.7, img: "assets/images/ichha-memory-19.jpg", icon: "👋" },
+    { caption: "The workday plot twist",      stamp: "#OfficeDays",   tilt:  3.1, img: "assets/images/ichha-memory-20.jpg", icon: "✨" },
+    { caption: "A perfectly Ichha moment",    stamp: "#Candid",       tilt: -2.6, img: "assets/images/ichha-memory-21.jpg", icon: "💛" },
+    { caption: "A grin across the desk",      stamp: "#OfficeDays",   tilt:  1.9, img: "assets/images/ichha-memory-22.jpg", icon: "☀️" },
+    { caption: "The helmet hid the smile",    stamp: "#Outtakes",     tilt: -1.4, img: "assets/images/ichha-memory-23.jpg", icon: "🪖" },
+    { caption: "Peak helmet drama",           stamp: "#Adventure",    tilt:  2.6, img: "assets/images/ichha-memory-24.jpg", icon: "🛵" },
+    { caption: "All dressed up, all Ichha",   stamp: "#Style",        tilt: -2.3, img: "assets/images/ichha-memory-25.jpg", icon: "✨" },
+    { caption: "The rear-view reflection",    stamp: "#OnTheWay",     tilt:  1.6, img: "assets/images/ichha-memory-26.jpg", icon: "🛵" },
+    { caption: "Saree-day, together",         stamp: "#Us",           tilt: -1.9, img: "assets/images/ichha-memory-27.jpg", icon: "💜" }
   ],
 
   balloons: [
-    { msg: "Stay wonderfully authentic and uniquely you, always!", icon: "🌈", cls: "b1" },
-    { msg: "Keep dancing fearlessly through every single adventure!", icon: "💃", cls: "b2" },
-    { msg: "May your plate always be full of your favorite treats!", icon: "🍕", cls: "b3" },
-    { msg: "May your spontaneous road trips never come to an end!", icon: "🌊", cls: "b4" },
-    { msg: "Never stop shining as our legendary Birthday Star!", icon: "👑", cls: "b5" },
-    { msg: "Wishing you a lifetime of joy, laughter and true happiness!", icon: "🎂", cls: "b6" }
+    { msg: "Okay, Ichha! Wishing you 100% joy, 0% bugs, and absolutely no 17 cm estimates.", icon: "📏", cls: "b1" },
+    { msg: "May that accidental stopline clear stay harmless, legendary, and forever funny in our story.", icon: "🧹", cls: "b2" },
+    { msg: "Your 0.17% stopline improvement: a tiny number, an enormous place in team history.", icon: "📈", cls: "b3" },
+    { msg: "For the 17 cm stopline: please consult the 15 cm geometry-box scale before the next estimate. I had to say it.", icon: "📐", cls: "b4" },
+    { msg: "May this year bring improvements much bigger than 0.17%, and a hundred reasons to celebrate each one.", icon: "✨", cls: "b5" },
+    { msg: "Okay, Himanshu, enough stopline roasting. Happy birthday, Ichha. I'm lucky to share these stories with you.", icon: "💛", cls: "b6" }
   ]
 };
 
@@ -263,7 +282,8 @@ function handleMusicForPage(page) {
 function isUnlocked() {
   const now = new Date(new Date().toLocaleString("en-US", { timeZone: CONFIG.timeZone }));
   const isBday = (now.getMonth() === CONFIG.birthdayMonth - 1 && now.getDate() === CONFIG.birthdayDay);
-  return previewMode === "bday" || isBday;
+  const isPreview = window.location.search.includes("preview") || window.location.search.includes("demo");
+  return previewMode === "bday" || isBday || isPreview;
 }
 
 function goTo(target) {
@@ -485,14 +505,14 @@ function initCountdown() {
       return;
     }
 
-    // ⏳ COUNTDOWN STATE (Locked until September 19th)
+    // ⏳ COUNTDOWN STATE (Locked until the configured birthday)
     if (dotsNav && !isUnlocked()) dotsNav.style.display = "none";
     if (pillTag) pillTag.style.display = "inline-flex";
 
     $("clock-row")?.classList.remove("hidden");
     $("bday-banner")?.classList.add("hidden");
     $("landing-heading")?.classList.remove("hidden");
-    if ($("landing-heading")) $("landing-heading").innerHTML = 'Advance Happy Birthday to our <span class="landing-highlight">Birthday Star! 🌟</span>';
+    if ($("landing-heading")) $("landing-heading").innerHTML = `A little birthday magic for <span class="landing-highlight">${CONFIG.friendName} 🌟</span>`;
 
     // Strictly remove/hide pull-heart during countdown
     if (pullContainer) {
@@ -500,14 +520,14 @@ function initCountdown() {
       pullContainer.style.display = "none";
     }
 
-    // Show "Unlocks on September 19th" ONLY after music plays
+    // Show the passcode prompt only after music plays
     if (isPlaying) {
       if (handPointer) handPointer.classList.add("hidden-hand");
       if (enterBtn) {
         enterBtn.style.display = "inline-flex";
         enterBtn.classList.add("locked-btn");
         enterBtn.disabled = false;
-        enterBtn.innerHTML = `🔒 Unlocks on September 19th`;
+        enterBtn.innerHTML = `🔒 Unlock with birthday passcode`;
         enterBtn.style.cursor = "pointer";
         enterBtn.style.pointerEvents = "auto";
         enterBtn.style.opacity = "0.9";
@@ -577,13 +597,13 @@ function initAudio() {
       isPlaying = true;
       updateMusicPlayerUI(true);
 
-      // Reveal "Unlocks on September 19th" button if on countdown
+      // Reveal the passcode prompt if the countdown is still locked
       const enterBtn = document.getElementById("enter-btn");
       if (enterBtn && !isUnlocked()) {
         enterBtn.style.display = "inline-flex";
         enterBtn.classList.add("locked-btn");
         enterBtn.disabled = false;
-        enterBtn.innerHTML = `🔒 Unlocks on September 19th`;
+        enterBtn.innerHTML = `🔒 Unlock with birthday passcode`;
         enterBtn.style.cursor = "pointer";
         enterBtn.style.pointerEvents = "auto";
         enterBtn.style.opacity = "0.9";
@@ -1728,13 +1748,13 @@ function replayAll() {
 
 // Lightweight, page-related floating emojis for every page (first page 0 through final page 11)
 const PAGE_EMOJIS = {
-  0: ["🦆", "🎂", "✨", "🎉", "💛", "🎈"],  // Page 0: Birthday landing / The Joyful Soul
+  0: ["🎂", "🎉", "🎁", "✨", "💜", "🎈"],  // Page 0: Ichha's birthday landing
   1: ["🌌", "🪐", "✨", "⭐", "🔮", "💫"],  // Page 1: Multiverse madness portal
-  2: ["🦆", "⭐", "💛", "✨", "🌟", "🐤"],  // Page 2: Universe 01 — The Joyful Soul
-  3: ["🍳", "🔥", "👩‍🍳", "🧂", "🥞", "✨"],  // Page 3: Universe 02 — Master Chef
-  4: ["🍔", "🍕", "🧋", "🍟", "🍰", "🌮"],  // Page 4: Universe 03 — The Foodie
-  5: ["🌊", "🌴", "🌺", "🐚", "⛵", "🌈"],  // Page 5: Universe 04 — Island Wanderer
-  6: ["🎵", "🎶", "💃", "✨", "🎤", "🌟"],  // Page 6: Universe 05 — The Dance Star
+  2: ["💻", "☕", "📸", "✨", "🌿", "💛"],  // Page 2: Office Hours, Ichha Style
+  3: ["😂", "📷", "✨", "🎬", "💖", "🌟"],  // Page 3: The Candid Files
+  4: ["💜", "🌿", "✨", "🪷", "👑", "💫"],  // Page 4: Saree-Day Spotlight
+  5: ["🧸", "📼", "🌟", "💛", "✨", "🎞️"],  // Page 5: The Little Throwback
+  6: ["🎥", "💃", "💜", "✨", "🌿", "🎶"],  // Page 6: Saree-Day Spin
   7: ["👑", "💙", "⚡", "🌟", "✨", "💎"],  // Page 7: Universe 06 — The Madness Queen
   8: ["📸", "🌸", "💖", "🎞️", "✨", "💝"],  // Page 8: Scrapbook Memories & Blooming Tree
   9: ["🎩", "✨", "🎀", "👑", "🦆", "🎂"],  // Page 9: Magic Wish Hat 🎩✨
@@ -2311,7 +2331,7 @@ function restoreCutCakeState() {
   if (candle) candle.classList.remove("hidden");
   if (flame) flame.classList.add("blown-out");
   if (reveal) reveal.classList.remove("hidden");
-  if (title) title.innerHTML = '<span class="cake-text-glow">Happy Birthday, Bestie!</span> <span class="natural-emoji">🎂👑</span>';
+  if (title) title.innerHTML = `<span class="cake-text-glow">Happy Birthday, ${CONFIG.friendName}!</span> <span class="natural-emoji">🎂👑</span>`;
   if (subtitle) subtitle.innerText = "👆 Tap the cake to slice & make a wish!";
   if (page10) page10.classList.remove("cake-dark-mode");
 }
@@ -2383,7 +2403,7 @@ function startBakingSequence() {
   setTimeout(() => {
     if (cakeHasBeenCut) return;
     if (candle) candle.classList.remove("hidden");
-    if (title) title.innerHTML = '<span class="cake-text-glow">Happy Birthday, Bestie!</span> <span class="natural-emoji">🎂👑</span>';
+    if (title) title.innerHTML = `<span class="cake-text-glow">Happy Birthday, ${CONFIG.friendName}!</span> <span class="natural-emoji">🎂👑</span>`;
     if (subtitle) subtitle.innerText = "👆 Tap the cake to slice & make a wish!";
     cakeStage = 5;
   }, 3000);
@@ -2406,7 +2426,7 @@ function onCakeClick() {
     if (mid) mid.className = "cake-layer cake-mid stacked-tier";
     if (top) top.className = "cake-layer cake-top stacked-tier";
     if (candle) candle.classList.remove("hidden");
-    if (title) title.innerHTML = '<span class="cake-text-glow">Happy Birthday, Bestie!</span> <span class="natural-emoji">🎂👑</span>';
+    if (title) title.innerHTML = `<span class="cake-text-glow">Happy Birthday, ${CONFIG.friendName}!</span> <span class="natural-emoji">🎂👑</span>`;
     if (subtitle) subtitle.innerText = "👆 Tap the cake to slice & make a wish!";
     cakeStage = 5;
     return;
@@ -2463,16 +2483,18 @@ let treeRevealedCount = 0;
 function updateScrapbookText() {
   const treeHint = document.getElementById("tree-hint-text");
   const gallerySub = document.getElementById("gallery-sub-text");
+  const totalMemories = CONFIG.gallery.length;
+  const nextCount = Math.min(treeRevealedCount + 8, totalMemories);
 
   if (treeRevealedCount === 0) {
-    if (treeHint) treeHint.textContent = "💝 Tap tree to bloom memories!";
-    if (gallerySub) gallerySub.textContent = "Tap the blooming tree to reveal memories! (Tap photo to zoom)";
-  } else if (treeRevealedCount < 8) {
-    if (treeHint) treeHint.textContent = `💝 Tap tree for next memory! (${treeRevealedCount}/8)`;
-    if (gallerySub) gallerySub.textContent = `Memory ${treeRevealedCount} revealed! Tap tree for more (${treeRevealedCount}/8)`;
+    if (treeHint) treeHint.textContent = "💝 Tap the tree to open your album!";
+    if (gallerySub) gallerySub.textContent = `A camera roll of ${totalMemories} Ichha moments. Tap any photo to zoom.`;
+  } else if (treeRevealedCount < totalMemories) {
+    if (treeHint) treeHint.textContent = `💝 Tap for ${nextCount - treeRevealedCount} more!`;
+    if (gallerySub) gallerySub.textContent = `${treeRevealedCount} of ${totalMemories} moments revealed. Tap the tree for the next set.`;
   } else {
-    if (treeHint) treeHint.textContent = "✨ All 8 memories blossomed! 💖";
-    if (gallerySub) gallerySub.textContent = "All 8 memories unlocked! Tap any photo to zoom 📸";
+    if (treeHint) treeHint.textContent = `✨ All ${totalMemories} moments are in bloom!`;
+    if (gallerySub) gallerySub.textContent = "The whole album is open. Tap any photo to zoom 📸";
   }
 }
 
@@ -2481,31 +2503,33 @@ function renderScrapbookGrid(justRevealedIdx = -1) {
   if (!container) return;
 
   const html = [];
-  for (let i = 0; i < 8; i++) {
+  if (treeRevealedCount === 0) {
+    html.push(`
+      <div class="polaroid-slot-placeholder album-start-prompt">
+        <div class="placeholder-inner">
+          <span class="placeholder-icon">🌸</span>
+          <span class="placeholder-label">27 moments, one tap away</span>
+          <span class="placeholder-sub">Tap the tree to begin</span>
+        </div>
+      </div>
+    `);
+  }
+
+  for (let i = 0; i < treeRevealedCount; i++) {
     const it = CONFIG.gallery[i];
-    if (i < treeRevealedCount && it) {
+    if (it) {
       const isNew = (i === justRevealedIdx);
       html.push(`
         <article class="polaroid-card revealed ${isNew ? 'just-revealed' : ''}" data-idx="${i}" onclick="openLightbox(${i})" tabindex="0" role="button" aria-label="${it.caption}">
           <div class="polaroid-img-frame">
             <img src="${it.img}" alt="${it.caption}" class="polaroid-photo" loading="lazy"
-              onerror="this.onerror=null;this.src='assets/images/memory-1.webp';">
+              onerror="this.onerror=null;this.src='assets/images/ichha-memory-01.jpg';">
           </div>
           <div class="polaroid-footer">
             <span class="polaroid-caption">${it.caption}</span>
             <span class="polaroid-stamp">${it.stamp}</span>
           </div>
         </article>
-      `);
-    } else {
-      html.push(`
-        <div class="polaroid-slot-placeholder" aria-label="Memory ${i + 1} locked">
-          <div class="placeholder-inner">
-            <span class="placeholder-icon">🌸</span>
-            <span class="placeholder-label">Memory ${i + 1}</span>
-            <span class="placeholder-sub">Tap tree</span>
-          </div>
-        </div>
       `);
     }
   }
@@ -2541,11 +2565,12 @@ function onTreeClick() {
   // 2. Burst confetti
   fireConfetti();
 
-  // 3. Progressive reveal of exactly one photo in order up to 8
-  if (treeRevealedCount < 8) {
-    treeRevealedCount++;
+  // Reveal eight photos per tap so the complete camera roll stays easy to browse.
+  if (treeRevealedCount < CONFIG.gallery.length) {
+    const firstNewIndex = treeRevealedCount;
+    treeRevealedCount = Math.min(treeRevealedCount + 8, CONFIG.gallery.length);
     if (typeof SFX !== "undefined" && SFX.chime) {
-      SFX.chime(treeRevealedCount);
+      SFX.chime(Math.floor(firstNewIndex / 8));
     }
     renderScrapbookGrid(treeRevealedCount - 1);
   } else {

@@ -1,26 +1,25 @@
-# 🎂 Interactive Birthday Celebration Web Portal 🎈✨
+# 🎂 A Birthday Celebration for Ichha 🎈✨
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://bday-template.netlify.app/?preview=1)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Canvas Confetti](https://img.shields.io/badge/Canvas_Confetti-FF69B4?style=flat)](https://www.npmjs.com/package/canvas-confetti)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-An enchanting, production-grade **Interactive Birthday Celebration Web Portal** built with vanilla HTML5, CSS3, JavaScript, and HTML5 Canvas particle physics. Featuring smooth 3D zoom transitions, floating sakura petals, dynamic video universe showcases, an interactive blooming memory tree, a pullable magic wish hat, a sliceable 3-tier birthday cake with flame blowout, and an interactive archery bow-and-arrow grand finale.
+An interactive birthday celebration for **Ichha**, sent with warm wishes from **Himanshu**. Built with vanilla HTML5, CSS3, JavaScript, and HTML5 Canvas particle effects, it includes six playful universes, a memory gallery, a magic wish reveal, a sliceable birthday cake, and a celebratory finale.
 
-Designed to be easily customizable for any best friend, sibling, partner, or colleague in less than 2 minutes!
+The birthday date, wishes, captions, photos, and music can all be adjusted before sharing Ichha's page.
 
 ---
 
 ## 🎮 Live Preview & Unlock Password
 
-Anyone can instantly test and preview the live website:
+Use the preview query on your locally hosted or deployed site to open the celebration immediately:
 
 | Access Method | Link / Details | Action |
 |---|---|---|
-| **🚀 Instant Preview Link** | [**Click to Open (Direct Bypass)**](https://bday-template.netlify.app/?preview=1) | Automatically bypasses the countdown lock and opens all pages! |
-| **🌐 Standard Live Link** | [https://bday-template.netlify.app/](https://bday-template.netlify.app/) | Shows real-time countdown timer locked until birthday. |
+| **🚀 Instant Preview** | Add `?preview=1` to your site URL | Opens the celebration without waiting for the configured birthday. |
+| **🌐 Birthday Countdown** | Open the site without a query string | Shows the countdown using the date configured in `script.js`. |
 | **🔑 Secret Unlock Password** | `birthday` *(all lowercase)* | Click the lock button on the countdown screen & enter this password to unlock! |
 
 ---
@@ -31,14 +30,14 @@ Anyone can instantly test and preview the live website:
    - Real-time countdown timer locked until the exact birthday date.
    - Built-in instant preview bypass: append `?preview=1` or enter password `birthday`.
 2. **🌌 6 Multiverse Character Universes**
-   - **Universe 01 — The Joyful Soul ✨**: Radiant star shower with gold gradients.
-   - **Universe 02 — Master Chef 👩‍🍳**: Warm flame glow with culinary spice animations.
-   - **Universe 03 — The Foodie 🍔**: Neon diner vibe with floating treats.
-   - **Universe 04 — Island Wanderer 🌊**: Tropical ocean beach with rolling wave gradients.
-   - **Universe 05 — The Dance Star 💃**: Dance floor with animated audio visualizer bars.
-   - **Universe 06 — Birthday Royalty 👑**: Galactic cosmos nebula with royal crown sparkles.
+   - **Universe 01 — Office Hours, Ichha Style 💻**: A supplied workday video and office candids.
+   - **Universe 02 — The Candid Files 🎬**: Unplanned snapshots and behind-the-scenes laughs.
+   - **Universe 03 — Saree-Day Spotlight 💜**: Ichha's festive looks and personal portrait.
+   - **Universe 04 — The Little Throwback 📼**: Earlier chapters from the photo archive.
+   - **Universe 05 — A Little Saree-Day Spin 💃**: The supplied saree-day video.
+   - **Universe 06 — Ichha, Full Spotlight 👑**: A birthday portrait and personal wishes.
 3. **🌳 Blooming Memory Tree & Polaroid Gallery**
-   - Click the interactive heart tree to bloom vibrant leaves and reveal 8 tilt-styled Polaroid memory photos with customizable captions.
+   - Tap the heart tree to reveal all 27 supplied photos in sets of eight, with a zoomable lightbox.
 4. **🎩 The Magic Wish Hat**
    - Interactive pullable ribbon: drag the ribbon upwards to unveil 6 heartfelt birthday wishes one by one with sparkler effects.
 5. **🎂 Sliceable 3-Tier Cake with Candle Blowout**
@@ -52,7 +51,7 @@ Anyone can instantly test and preview the live website:
 
 ## 🚀 How to Customize & Deploy (Step-by-Step)
 
-You can personalize this portal with your friend's photos, favorite song, and birthday date in 3 simple steps:
+You can update Ichha's birthday date, photos, favorite song, and wishes in a few steps:
 
 ### Step 1: Download or Clone the Code
 
@@ -71,17 +70,17 @@ Open `script.js` in any text editor (VS Code, Notepad, etc.) and edit the `CONFI
 
 ```javascript
 const CONFIG = {
-  birthdayMonth: 9,           // Birthday month (1 to 12)
-  birthdayDay:   19,          // Day of the birthday (e.g., 19)
+   birthdayMonth: 11,          // November
+   birthdayDay:   28,          // Ichha's birthday
   timeZone:      "Asia/Kolkata", // Your timezone
   passcode:      "birthday",  // Change or keep your secret unlock password!
-  friendName:    "Bestie",    // Friend's name or nickname
+   friendName:    "Ichha",     // Birthday person's name
 
-  // 8 Polaroid Memories on the Blooming Tree
+   // 27 photos in the scrapbook album
   gallery: [
-    { caption: "Our First Selfie", stamp: "#Memories", tilt: -2.5, img: "assets/images/memory-1.webp", icon: "📸" },
-    { caption: "Milestone Moments", stamp: "#Victories", tilt: 3.2, img: "assets/images/memory-2.webp", icon: "⭐" },
-    // ... customize captions for all 8 memories
+      { caption: "The mirror caught us", stamp: "#Us", tilt: -2.5, img: "assets/images/ichha-memory-01.jpg", icon: "📸" },
+      { caption: "Office hours, Ichha style", stamp: "#Workday", tilt: 3.2, img: "assets/images/ichha-memory-02.jpg", icon: "💻" },
+      // ... continue through ichha-memory-27.jpg
   ],
 
   // 6 Magic Hat Wishes
@@ -92,14 +91,17 @@ const CONFIG = {
 };
 ```
 
-#### B. Replace Media Files in `assets/`:
-- **Photos (`assets/images/`)**:
-  - Replace `birthday-queen.webp` (or `.jpg`/`.png`) with your friend's main portrait.
-  - Replace `memory-1.webp` through `memory-8.webp` with your 8 favorite memory photos.
+The countdown is set to November 28 for Ichha. For an immediate preview, add `?preview=1` to the URL.
+
+#### B. Birthday Photos and Videos
+- The 27 gallery photos are in `assets/images/ichha-memory-01.jpg` through `ichha-memory-27.jpg`.
+- The finale portrait is `assets/images/ichha-portrait.jpg`.
+- The office and saree-day clips are `assets/videos/ichha-workday.mp4` and `assets/videos/ichha-saree.mp4`.
+- Gallery captions can be edited in the `CONFIG.gallery` array in `script.js`.
 - **Music (`assets/audio/`)**:
-  - Replace `song.mp3` with your friend's favorite celebration song.
-- **Videos (`assets/videos/`)** *(Optional)*:
-  - Add short video clips `universe-1.mp4` through `universe-6.mp4` for the multiverse showcases.
+   - Replace `song.mp3` with Ichha's favorite celebration song.
+- **Videos (`assets/videos/`)**:
+   - The office and saree-day clips are already connected to their matching pages.
 
 ---
 
@@ -109,7 +111,7 @@ const CONFIG = {
 1. Go to [Netlify Drop](https://app.netlify.com/drop) (sign in or create a free account).
 2. Simply **drag and drop** your project folder into the upload box on Netlify.
 3. Your site is live instantly! You will get a link like `https://your-name.netlify.app`.
-4. *(Optional)* Go to **Site Configuration > Change site name** to give it a custom name (e.g., `happy-bday-bestie.netlify.app`).
+4. *(Optional)* Go to **Site Configuration > Change site name** to give it a custom name (e.g., `birthday-wishes-for-ichha.netlify.app`).
 
 #### Option 2: Deploy with GitHub Pages
 1. Push your customized project to a new repository on your GitHub account.
@@ -118,8 +120,13 @@ const CONFIG = {
 4. Your site will be published at `https://<your-username>.github.io/<repo-name>/`.
 
 #### Option 3: Deploy with Vercel
-1. Go to [Vercel](https://vercel.com/) and click **Add New Project**.
-2. Import your GitHub repository and click **Deploy**.
+1. Create a new GitHub repository under your account. This workspace still points to the original template repository, so do not import that upstream repository for Ichha's site.
+2. Push this customized project, including `assets/images/` and `assets/videos/`, to your new repository.
+3. In [Vercel](https://vercel.com/), choose **Add New Project** and import your new repository.
+4. Choose **Other** as the framework preset. Leave the build and output directory overrides empty; this is a static HTML site.
+5. Click **Deploy**, then share the generated `https://<project>.vercel.app/?preview=1` link to open the celebration immediately.
+
+The deployed page and its photo/video asset URLs will be accessible online. A private GitHub repository does not make the deployed site or its media private.
 
 ---
 
@@ -132,13 +139,13 @@ interactive-birthday-webpage/
 ├── style.css               # Responsive styling, animations & 3D transforms
 ├── assets/
 │   ├── audio/
-│   │   └── song.mp3        # Celebration background track
+│   │   └── song.mp3
 │   ├── images/
-│   │   ├── birthday-queen.webp # Royal crown portrait photo
-│   │   ├── memory-[1-8].webp   # 8 Polaroid memory photos
-│   │   └── universe-[0-5].webp # Universe fallback posters
+│   │   ├── ichha-portrait.jpg
+│   │   └── ichha-memory-[01-27].jpg
 │   └── videos/
-│       └── README.md       # Drop-in guide for optional universe video clips
+│       ├── ichha-workday.mp4
+│       └── ichha-saree.mp4
 ├── .gitignore              # Keeps your private media safe
 ├── LICENSE                 # MIT License
 └── README.md               # Documentation & setup guide

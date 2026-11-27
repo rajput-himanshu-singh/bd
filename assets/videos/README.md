@@ -1,11 +1,7 @@
 # Universe Videos Directory
 
-Place your personal celebration MP4 videos in this directory:
-- `universe-1.mp4` (Universe 01: The Joyful Soul)
-- `universe-2.mp4` (Universe 02: Master Chef)
-- `universe-3.mp4` (Universe 03: The Foodie)
-- `universe-4.mp4` (Universe 04: Island Wanderer)
-- `universe-5.mp4` (Universe 05: The Dance Star)
-- `universe-6.mp4` (Universe 06: Birthday Royalty)
+The two clips included in Ichha's birthday site are:
+- `ichha-workday.mp4` (Universe 01: Office Hours, Ichha Style)
+- `ichha-saree.mp4` (Universe 05: A Little Saree-Day Spin)
 
-> **Privacy Note**: This directory is git-ignored by default to prevent private video recordings from ever being accidentally pushed to public repositories.
+These two named clips are explicitly included by `.gitignore` so they can be deployed with the site. Other personal video files remain ignored by default.

@@ -4209,7 +4209,8 @@ html, body {
   flex-direction: column !important;
   padding: clamp(8px, 1.5vh, 14px) clamp(10px, 1.5vw, 16px) !important;
   box-sizing: border-box !important;
-  overflow: hidden !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
 }
 
 .compact-gallery-header {
@@ -4240,16 +4241,17 @@ html, body {
   color: rgba(255, 230, 245, 0.85) !important;
 }
 
-/* Polaroid Grid: 8 slots in 4 columns x 2 rows, complete photos with original ratios */
+/* Polaroid album: scrollable rows keep the full camera roll available. */
 .compact-polaroid-grid {
-  flex: 1 !important;
-  min-height: 0 !important;
+  flex: none !important;
+  min-height: 100% !important;
   display: grid !important;
   grid-template-columns: repeat(4, 1fr) !important;
-  grid-template-rows: repeat(2, 1fr) !important;
+  grid-template-rows: none !important;
+  grid-auto-rows: minmax(150px, 220px) !important;
   gap: clamp(6px, 1vw, 10px) !important;
   width: 100% !important;
-  height: 100% !important;
+  height: auto !important;
   box-sizing: border-box !important;
 }
 
@@ -4401,8 +4403,12 @@ html, body {
 
   .compact-polaroid-grid {
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-rows: repeat(4, 1fr) !important;
+    grid-template-rows: none !important;
+    grid-auto-rows: minmax(150px, 220px) !important;
     gap: 4px !important;
+    height: auto !important;
+    min-height: 0 !important;
+    flex: none !important;
   }
 
   .compact-gallery-header {

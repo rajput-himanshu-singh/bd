@@ -11,6 +11,10 @@ assets/videos/*.avi
 *.mov
 *.avi
 
+# Include the two clips selected for Ichha's birthday site.
+!assets/videos/ichha-workday.mp4
+!assets/videos/ichha-saree.mp4
+
 # 2. Operating System Files
 .DS_Store
 Thumbs.db
